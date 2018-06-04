@@ -30,7 +30,7 @@ public class SQLBuilder {
                 HSSFCell cell1 = row.getCell(1);
                 String cellzero =  cell0.getStringCellValue();
                 String cellone = cell1.getStringCellValue();
-                String SQL = "insert into phone_book (userid,folderid,dispname,gender,organization,title,version,privateid) VALUES (0,108298,'" + cellone + "',0,'"+ cellzero +"','normal',0,0)";
+                String SQL = "insert into phone_book (userid,folderid,dispname,gender,organization,title,version,privateid) VALUES (0,108298,'" + cellone + "',0,'"+ cellzero +"','normal',0,0);";
                 HSSFCell celltwo = row.createCell(2);
                 celltwo.setCellValue(SQL);
             }
